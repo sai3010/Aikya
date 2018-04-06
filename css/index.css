@@ -1,0 +1,22 @@
+nav{
+    background:transparent;
+    z-index: 0;
+}
+nav ul a,nav .brand-logo
+{
+    color: black !important;   
+}
+.mainsec
+{
+    background-color: #424242;
+    height: 100vh;
+}
+section
+{
+    height: 100vh;
+}
+.icon
+{
+    margin-top: 6vh;
+
+}
