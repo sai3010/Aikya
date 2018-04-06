@@ -1,15 +1,25 @@
  <!DOCTYPE html>
   <html>
     <head>
+     <title>Aikya 2018</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-      <link rel="stylesheet" href="css/index.css">
-      <title>Aikya 2018</title>
+       <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+            
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link rel="stylesheet" href="css/index.css">
+      <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
     </head>
 
     <body> 
@@ -38,46 +48,254 @@
         <li><a href="#events">Events</a></li>
         <li><a href="collapsible.html">Contact</a></li>
       </ul>
+
       <section id="events" class="eventsec">
         <div class="container">
-            <div class="row">
-                <div class="col s12 m3">
-                  <div class="card">
-                    <div class="card-image">
-                      <img src="images/pf.jpg">
-                      <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                      <p>I am a very simple card. I am good at containing small bits of information.
-                      I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                      <a href="#">This is a link</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          <div class="row">
-            <div class="col s6 m3 l4 xl4">
-              <ul class="collection">
-                  <li class="collection-item avatar">
-                    <img src="images/pf.jpg" alt="" class="circle">
-                    <span class="title">Phineas And Ferb’s Techno-Extravaganza</span>
-                    <p>
-                      Presentation of innovative projects by the students during this academic year. These projects include the final year projects by students from various departments within our college and from other colleges as well.
-                    </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                  </li>
-                </ul>
-              </div>
-          </div>
+        <div class="row">
+          <ul class="listul cardul">
+            <li class="cardli"><a class="waves-effect waves-light modal-trigger" href="#modal1"><img src="images/pf.jpg"/>
+              <p>Phineas And Ferb’s Techno-Extravaganza</p>
+              <p><a class="waves-effect waves-light btn-small">REGISTER</a></p></a>
+            </li>
+             <li class="cardli"><a class="waves-effect waves-light modal-trigger" href="#modal2"><img src="images/pf.jpg" />
+              <p>Code Breakers - Coding Contest</p><br>
+              <p><a class="waves-effect waves-light btn-small">REGISTER</a></p></a>
+            </li>
+            <li class="cardli"><a class="waves-effect waves-light modal-trigger" href="#modal3"><img src="images/pf.jpg"  />
+              <p>Rick Sanchez’s Ideapalooza</p><br>
+              <p><a class="waves-effect waves-light btn-small">REGISTER</a></p></a>
+            </li>
+           
+            <li class="cardli"><a class="waves-effect waves-light modal-trigger" href="#modal4"><img src="images/pf.jpg"  />
+              <p>Hunt for the Infinity Stones</p>
+              <p><a class="waves-effect waves-light btn-small">REGISTER</a></p></a>
+            </li>
+            <li class="cardli"><a class="waves-effect waves-light modal-trigger" href="#modal5"><img src="images/pf.jpg" />
+              <p>Crisis on Infinite Earths</p>
+              <p><a class="waves-effect waves-light btn-small">REGISTER</a></p></a>
+            </li>
+             <li class="cardli"><a class="waves-effect waves-light modal-trigger" href="#modal6"><img src="images/pf.jpg"/>
+              <p>Marvel vs DC - Debate Standoff</p>
+              <p><a class="waves-effect waves-light btn-small">REGISTER</a></p></a>
+            </li>
+             <li class="cardli"><a class="waves-effect waves-light modal-trigger" href="#modal7"><img src="images/pf.jpg"/>
+              <p>Cosplay Day</p>
+              <p><a class="waves-effect waves-light btn-small">REGISTER</a></p></a>
+            </li>
+          </ul>
         </div>
+      </div>
+
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="modal-back">
+        <img class="modal-img" src="images/pf.jpg"  />
+      </div>
+      <div class="modal-details">
+      <p>Presentation of innovative projects by the students during this academic year. These projects include the final year projects by students from various departments within our college and from other colleges as well.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Venue:</td>
+              <td>Edusat Hall</td>
+            </tr>
+            <tr>
+              <td>Timings:</td>
+              <td>9:45 am - 12 pm</td>
+            </tr>
+            <tr>
+              <td>Registration Fee:</td>
+              <td>Rs 50</td>
+            </tr>     
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="modal-back">
+        <img class="modal-img" src="images/pf.jpg"  />
+      </div>
+      <div class="modal-details">
+      <p>This coding contest challenges our students with scenarios faced by present day professionals includes coding and decoding problems.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Venue:</td>
+              <td>Room No 208</td>
+            </tr>
+            <tr>
+              <td>Timings:</td>
+              <td>9:45 am - 12 pm</td>
+            </tr>
+            <tr>
+              <td>Registration Fee:</td>
+              <td>Free</td>
+            </tr>     
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <div class="modal-back">
+        <img class="modal-img" src="images/pf.jpg"  />
+      </div>
+      <div class="modal-details">
+      <p>Innovations is key in our present day world and Rick Sanchez stands for the craziest and most innovative ideas to solve our problems. Present your crazy idea that can shake the Tech industry and win a chance to make it your dream project</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Venue:</td>
+              <td>Seminar Hall</td>
+            </tr>
+            <tr>
+              <td>Timings:</td>
+              <td>1:30 pm - 4:30 pm</td>
+            </tr>
+            <tr>
+              <td>Registration Fee:</td>
+              <td>Free</td>
+            </tr>     
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <div class="modal-back">
+        <img class="modal-img" src="images/pf.jpg"  />
+      </div>
+      <div class="modal-details">
+      <p>A completely themed event dedicated to the upcoming movie Avengers: Infinity Wars. A treasure hunt to assemble the infinity stones and defeat Thanos.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Venue:</td>
+              <td>Room No 205 &amp; 311</td>
+            </tr>
+            <tr>
+              <td>Timings:</td>
+              <td>9:45 am - 1 pm</td>
+            </tr>
+            <tr>
+              <td>Registration Fee:</td>
+              <td>Rs 30</td>
+            </tr>     
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <div class="modal-back">
+        <img class="modal-img" src="images/pf.jpg"  />
+      </div>
+      <div class="modal-details">
+      <p>A homage to one of the most significant story-lines in the DC multiverse. A QR hunt to assemble the Justice League and protect our Earth.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Venue:</td>
+              <td>Room No 202</td>
+            </tr>
+            <tr>
+              <td>Timings:</td>
+              <td>9:45 am - 1 pm</td>
+            </tr>
+            <tr>
+              <td>Registration Fee:</td>
+              <td>Rs 30</td>
+            </tr>     
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <div class="modal-back">
+        <img class="modal-img" src="images/pf.jpg"  />
+      </div>
+      <div class="modal-details">
+      <p>Are you a true DC or Marvel fan? How about you take up this debate to settle things once and for all. Who can come out on top?</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Venue:</td>
+              <td>Room No 203-204</td>
+            </tr>
+            <tr>
+              <td>Timings:</td>
+              <td>1:30 pm - 5 pm</td>
+            </tr>
+            <tr>
+              <td>Registration Fee:</td>
+              <td>Rs 30</td>
+            </tr>     
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+      <div class="modal-back">
+        <img class="modal-img" src="images/pf.jpg"  />
+      </div>
+      <div class="modal-details">
+      <p>How crazy are you about becoming your favorite comic character? Represent a character or element from the pop culture realm.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Venue:</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Timings:</td>
+              <td>Full Day</td>
+            </tr>
+            <tr>
+              <td>Registration Fee:</td>
+              <td>Free</td>
+            </tr>     
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
       </section>
         
       </div>
         <!-- Compiled and minified JavaScript -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-        <script src="js/index.js"></script>
+         <script type="text/javascript" src="js/index.js"></script>
     </body>
   </html>
+

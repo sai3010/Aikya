@@ -20,3 +20,137 @@ section
     margin-top: 6vh;
 
 }
+
+/*events css starts here*/
+
+.modal-details table td{
+	width: 50%;
+}
+.cardli{
+	border-radius: 5px;
+	overflow: hidden;
+	width: 43%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-family: 'Fugaz One', cursive;
+}
+.cardli *{
+	width: 100%;
+	text-align: center;
+}
+.cardul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+@media only screen and (max-width: 480px){
+	.head-style{
+		font-size: 6vw !important;
+	}
+	.card-name{
+	font-size: 1.25em;
+	font-weight: 700;
+}
+.card-info{
+	/*font-family: 'East Sea Dokdo', cursive;*/
+	font-size: 1.05em;
+	font-weight: 500;
+}
+}
+.cardul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: all .3s;
+  width: 100%;
+
+}
+li{
+  transition: all .3s;
+}
+li img{
+  width: 100%;
+}
+@media only screen and (min-width: 480px){
+		.cardli{
+		width: 200px;
+	}
+}
+@media only screen and (min-width: 550px){
+	.cardli{
+		width: 225px;
+	}
+		}
+@media only screen and (min-width: 751px){
+	.cardli{
+		width: 250px;
+	}
+		}
+@media only screen and (min-width: 928px){
+	.cardli{
+		width: 275px;
+	}
+		}
+.listul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: all .3s;
+  width: 100%;
+}
+li{
+  transition: all .3s;
+}
+li img{
+  width: 100%;
+}
+.listul li{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,.2);
+}
+.modal-img{
+	width: 60%;
+	max-width: 278px;
+	transition: all .3;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 90px;
+	border-radius: 30%;
+}
+.modal-back{
+	height: 30vh;
+	background: #F7F4E2;
+	margin-bottom: 100px;
+}
+@media only screen and (min-width: 480px){
+	.modal-img{
+			margin-left: auto;
+			margin-right: auto;
+	}
+}
+.modal-details{
+	position: relative;
+	font-family: 'Merienda', cursive;
+}
+.modal-content{
+	text-align: center;
+}
+@media only screen and (max-width: 480px)
+{
+	.listul li{
+		margin-right: 5px;
+	}
+	.modal-img{
+		width: 90%;
+		border-radius: 2000px;
+		top: 20px;
+	}
+		.modal-back{
+		height: 20vh;
+	}	
+}
+
+/*events css ends here*/
