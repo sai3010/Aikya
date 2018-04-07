@@ -1,16 +1,26 @@
+/*navbar*/
 nav{
-    background:transparent;
+    background:transparent ;
     z-index: 0;
 }
 nav ul a,nav .brand-logo
 {
     color: black !important;   
 }
-.mainsec
-{
-    background-color: #424242;
-    height: 100vh;
+/*navbar*/
+/*carousel*/
+.head{
+
+	font-family: 'Permanent Marker', cursive;
+	color: #fafafa ;
 }
+.head1{
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	font-style: bold;
+}
+
+
 section
 {
     height: 100vh;
