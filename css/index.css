@@ -22,7 +22,6 @@ section
 }
 
 /*events css starts here*/
-
 .modal-details table td{
 	width: 50%;
 }
@@ -117,13 +116,13 @@ li img{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	top: 90px;
+	/* top: 90px; */
 	border-radius: 30%;
 }
 .modal-back{
-	height: 30vh;
+	/* height: 30vh; */
 	background: #F7F4E2;
-	margin-bottom: 100px;
+	/* margin-bottom: 100px; */
 }
 @media only screen and (min-width: 480px){
 	.modal-img{
@@ -146,11 +145,18 @@ li img{
 	.modal-img{
 		width: 90%;
 		border-radius: 2000px;
-		top: 20px;
+		/* top: 20px; */
 	}
 		.modal-back{
 		height: 20vh;
+		margin-bottom: 100px;
 	}	
+}
+.etitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Merienda', cursive;
 }
 
 /*events css ends here*/
