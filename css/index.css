@@ -8,6 +8,7 @@ nav ul a,nav .brand-logo
     color: black !important;   
 }
 /*navbar*/
+
 /*carousel*/
 .head{
 
@@ -19,6 +20,8 @@ nav ul a,nav .brand-logo
 	color: #ffffff;
 	font-style: bold;
 }
+
+
 
 
 section
@@ -85,6 +88,7 @@ li img{
 		.cardli{
 		width: 200px;
 	}
+	
 }
 @media only screen and (min-width: 550px){
 	.cardli{
