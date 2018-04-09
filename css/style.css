@@ -1,12 +1,12 @@
 @font-face {
     font-family: Nexa;
-    src: url("https://raw.githubusercontent.com/sai3010/Aikya/blob/master/css/Nexa Light.otf") format("opentype");
+    src: url("https://rawgit.com/sai3010/Aikya/master/css/Nexa%20Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: Nexa;
     font-weight: bold;
-    src: url("https://raw.githubusercontent.com/sai3010/Aikya/blob/master/css/Nexa Bold.otf") format("opentype");
+    src: url("https://rawgit.com/sai3010/Aikya/master/css/Nexa%20Bold.otf.otf") format("opentype");
 }
 #mainNav {
   font-family: Nexa;
