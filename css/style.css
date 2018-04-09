@@ -1,12 +1,12 @@
 @font-face {
     font-family: Nexa;
-    src: url("Nexa Light.otf") format("opentype");
+    src: url("/Nexa Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: Nexa;
     font-weight: bold;
-    src: url("Nexa Bold.otf") format("opentype");
+    src: url("/Nexa Bold.otf") format("opentype");
 }
 #mainNav {
   font-family: Nexa;
@@ -244,8 +244,12 @@ section:not(.intro):nth-child(even){
 	margin-bottom: 50px;
 }
 
+.car{
+	 height: 100vh;
+}
+
 .car .carousel{
-	margin-top:100px;
+	margin-top:250px;
 	width: 90%;
 	overflow:hidden !important;
 }
@@ -256,6 +260,10 @@ section:not(.intro):nth-child(even){
 }
 
 @media only screen and (max-width: 500px){
+	.car{
+		margin-top: -150px;
+		height: auto;
+	}
 	.car .carousel{
 		width: 100%;
 	}
