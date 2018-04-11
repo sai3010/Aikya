@@ -7,16 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="https://blackrockdigital.github.io/startbootstrap-grayscale/vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://blackrockdigital.github.io/startbootstrap-grayscale/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-	<script src="js/odometer.js"></script>
-	<script>
-		window.onload=function(){
-
-		setTimeout(function(){
-		    odometer.innerHTML = 18;
-		}, 1000);
-	}
-	</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <script src="js/odometer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@5.7.0/dist/typeit.min.js" />
 <script type="text/javascript">!function(t,e){"use strict";var r=function(t){try{var r=e.head||e.getElementsByTagName("head")[0],a=e.createElement("script");a.setAttribute("type","text/javascript"),a.setAttribute("src",t),r.appendChild(a)}catch(t){}};t.CollectId = "5acbb47ea2fdf73de1b6b292",r("https://s3.amazonaws.com/collectchat/launcher.js")}(window,document);</script>
 	</head>
 <body>
@@ -45,7 +38,7 @@
     <section class="intro" id="home">
     	<div class="background-image"></div>
     	<div class="intro-content-area">
-	    	<h5>DEPARTMENT OF CSE PRESENTS</h5>
+	    	<h5 id="title"></h5>
 	    	<h1>AIKYA'<span id="odometer" class="odometer">00</span></h1>
 	    	<a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated fa-2x"></i>
@@ -382,6 +375,7 @@
 	
     
     <script src="https://blackrockdigital.github.io/startbootstrap-grayscale/vendor/jquery/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/animatedModal.js"></script>
     <script>
 	  $("#demo01").animatedModal({
