@@ -1,7 +1,14 @@
+
+
 @font-face {
     font-family: Nexa;
     src: url("https://rawgit.com/sai3010/Aikya/master/css/Nexa%20Light.otf") format("opentype");
 }
+
+/*@font-face {
+    font-family: ceviche;
+    src: url("ceviche one.ttf") format("TrueType");
+}*/
 
 @font-face {
     font-family: Nexa;
@@ -79,6 +86,7 @@
 	margin:0;
 	padding:0;
 	/*box-sizing: border-box;*/
+	
 }
 
 nav{
@@ -176,24 +184,43 @@ section:not(.intro):nth-child(even){
 	color:#fff;
 	font-size: 1.5em;
 	font-family: Nexa;
+	font-weight: normal;
 }
 
 .intro h1 {
-	text-shadow: 4px 4px 4px #000;
-	margin-bottom: 15px;
-	color:#fff;
-	font-size: 8em;
+	margin:5px auto;
 	font-family: Nexa;
+	color:#fff;
+	text-shadow: 10px 4px 20px #000;
+	font-size: 8em;
 	font-weight: bold;
+}
+
+.intro img{
+	height: 200px;
+	width: auto;
+}
+
+.btn-circle{
+	margin:5px auto;
+}
+
+.animated {
+  animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 
 @media only screen and (max-width: 500px){
 	.intro h5{
 		margin-top: 105px;
-		font-size: 1em;
+		font-size: 0.75em;
 	}
 	.intro h1{
 		font-size:4.5em;
+	}
+	.intro img{
+		height: 100px;
 	}
 }
 
@@ -237,11 +264,16 @@ section:not(.intro):nth-child(even){
 
 .about{
 	margin-top: 100px;
-	/*height: 100vh;*/
+	
 }
 
 .about h3{
 	margin-bottom: 50px;
+}
+
+.about p{
+	width: 80%;
+	text-align: center;
 }
 
 .car{
@@ -251,12 +283,25 @@ section:not(.intro):nth-child(even){
 .car .carousel{
 	margin-top:250px;
 	width: 90%;
+	
 	overflow:hidden !important;
 }
 
 .img-fluid{
 	width: 100% !important;
+	object-fit: cover;
 	height: 350px !important;
+	opacity: 0.8;
+	background: #333;
+}
+
+.carousel h5{
+	text-transform: uppercase;
+	text-shadow: 4px 4px 4px black;
+}
+.carousel p{
+	text-transform: uppercase;
+	text-shadow: 4px 4px 4px black;
 }
 
 @media only screen and (max-width: 500px){
@@ -269,6 +314,7 @@ section:not(.intro):nth-child(even){
 	}
 
 	.img-fluid{
+		object-fit: cover;
 		height:250px !important;
 		z-index: -9999 !important;
 	}
@@ -297,7 +343,7 @@ section:not(.intro):nth-child(even){
 
 
 .btn-primary{
-	background-color: #2c3e50 !important;
+	background-color: #000 !important;
 	border-radius: 0 !important;
 	border:none !important;
 	font-weight: bold !important;
@@ -367,17 +413,18 @@ section:not(.intro):nth-child(even){
 .modal-content p{
 	text-align: center;
 	margin:5px 30px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .modal-content table td{
+	text-transform: uppercase;
 	width: 50%;
 	padding:5px 75px;
 }
 
 table{
 	margin:15px auto;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 @media only screen and (max-width: 500px){
@@ -395,5 +442,108 @@ table{
 	.modal-content table td{
 	width: 50%;
 	padding:5px 15px;
+	}
+}
+
+.team{
+	margin:0 auto 50px !important;
+	width: 60%;
+}
+.team img{
+	margin: 0 auto;
+	height: 500px;
+	object-fit: contain;
+	
+}
+
+.past{
+	margin-bottom: 50px;
+}
+
+.past h3{
+	margin:50px auto;
+}
+
+.past p{
+	width: 80%;
+	text-align: center;
+}
+
+
+.grid{
+	width:90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+.past .grid li{
+	height: 350px;
+	padding:20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.past .grid li.small{
+	flex-basis: 30%;
+}
+.past .grid li.large{
+	flex-basis: 70%;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	color:#fff;
+	padding: 20px 0;
+}
+
+
+
+footer p a{
+	text-decoration: none;
+	color:#fff;
+	padding: 0 15px;
+}
+
+footer p a:hover{
+	color:#555;
+}
+
+footer p{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	opacity: 0.9;
+	align-self: center;
+}
+
+footer p strong{
+	letter-spacing: 1px;
+}
+
+@media (max-width: 500px){
+	.past .grid li.small,.past .grid li.large{
+		flex-basis: 100%;
+	}
+	footer{
+		flex-direction: column;
+	}
+	footer p{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	footer ul li{
+		margin: 0 8px;
+	}
+	.team{
+		width: 90%;
+	}
+	.team img{
+		height: 250px;
 	}
 }
