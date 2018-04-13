@@ -1,34 +1,12 @@
-// $(document).ready(function () {
-//   $('.sidenav').sidenav()
-// })
+var i = 0;
+var txt = 'DEPARTMENT OF CSE PRESENTS';
+var speed = 85;
 
-// // events js starts here
-
-// $(document).ready(function () {
-//   $('.modal').modal()
-// })
-
-// // events js ends here
-
-// // homr page carousel begin
-// $(document).ready(function () {
-//   $('.slider').slider()
-// })
-
-// home page carousel end
-
-// odometer
-window.onload = function () {
-  setTimeout(function () {
-    odometer.innerHTML = 18
-  }, 1000)
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("htitle").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
-
-// typeit js code
-new TypeIt('#title', {
-  strings: 'DEPARTMENT OF CSE PRESENTS',
-  speed: 100,
-  autoStart: true
-})
-
-// end of tyepit js
+typeWriter();
