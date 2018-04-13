@@ -1,0 +1,21 @@
+$("#demo01").animatedModal({
+                modalTarget:'animatedModal1'
+    });
+    $("#demo02").animatedModal({
+                modalTarget:'animatedModal2'
+    });
+    $("#demo03").animatedModal({
+                modalTarget:'animatedModal3'
+    });
+    $("#demo04").animatedModal({
+                modalTarget:'animatedModal4'
+    });
+    $("#demo05").animatedModal({
+                modalTarget:'animatedModal5'
+    });
+    $("#demo06").animatedModal({
+                modalTarget:'animatedModal6'
+    });
+    $("#demo07").animatedModal({
+                modalTarget:'animatedModal7'
+});
