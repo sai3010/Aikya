@@ -341,6 +341,10 @@ footer p{
   opacity: 0.9;
   align-self: center;
 }
+#btop
+{
+  color: white !important;
+}
 
 footer p strong{
   letter-spacing: 1px;

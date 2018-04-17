@@ -1,12 +1,12 @@
-var i = 0;
-var txt = 'DEPARTMENT OF CSE PRESENTS';
-var speed = 85;
+var i = 0
+var txt = 'DEPARTMENT OF CSE PRESENTS'
+var speed = 85
 
-function typeWriter() {
+function typeWriter () {
   if (i < txt.length) {
-    document.getElementById("htitle").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+    document.getElementById('htitle').innerHTML += txt.charAt(i)
+    i++
+    setTimeout(typeWriter, speed)
   }
 }
-typeWriter();
+typeWriter()

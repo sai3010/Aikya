@@ -429,6 +429,11 @@ footer p a:hover{
   color:#555;
 }
 
+#btop
+{
+  color: white !important;
+}
+
 footer p{
   text-transform: uppercase;
   text-align: center;
