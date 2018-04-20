@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Nexa;
+    src: url("https://rawgit.com/sai3010/Aikya/master/css/Nexa%20Light.otf") format("opentype");
+}
+
+/*@font-face {
+    font-family: ceviche;
+    src: url("ceviche one.ttf") format("TrueType");
+}*/
+
+html{
+	height: 100%;
+}
+
+@font-face {
+    font-family: Nexa;
+    font-weight: bold;
+    src: url("https://rawgit.com/sai3010/Aikya/master/css/Nexa%20Bold.otf") format("opentype");
+}
+
+body{
+	font-family: Nexa;
+	background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) ,url('../img/back.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.container{
+	margin-top: 10vh !important;
+}
+
+.frm-edit{
+    width:50%;
+    padding:15px;
+    margin:5vh auto;
+    background:rgba(255, 255, 255, 0.8);
+    border:5px solid #000;
+}
+
+.form-group{
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.form-control{
+    background:rgba(255, 255, 255, 0.7);
+    border:1px solid grey;
+    border-radius:0;
+}
+
+input.btn-primary{
+    background-color:rgba(0, 0, 0, 0.8);
+    position:relative;
+    display:block;
+    box-shadow:0 4px rgba(0, 0, 0, 0.9);
+    border:0;
+    outline:none;
+}
+
+input.btn-primary:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow:0 2px rgba(0, 0, 0, 1);
+    border:0;
+    top:2px;
+} 
+
+
+
+input.btn-primary:active{
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    outline:none !important;
+    box-shadow:0 0 rgba(0, 0, 0, 1);
+    border:0;
+    top:4px;
+}
+
+input.btn-primary:focus{
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    outline:none !important;
+    box-shadow:0 0 rgba(0, 0, 0, 1);
+    border:0;
+    top:4px;
+}
+
+.form-h1{
+	text-align:center;
+	color:black;
+	font-size:4em;
+	letter-spacing:1px;
+	font-weight: bold;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	color:#fff;
+	padding: 10px 0;
+}
+
+
+
+footer p a{
+	text-decoration: none;
+	color:#fff;
+	padding: 0 15px;
+}
+
+footer p a:hover{
+	color:#555;
+}
+
+footer p{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	opacity: 0.9;
+	align-self: center;
+}
+
+footer p strong{
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width:767px){
+	.container{
+		margin-top: 20px !important;
+	}
+
+    .form-group{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    
+    .form-control{
+        background:rgba(255, 255, 255, 0.7);
+        border:1px solid grey;
+        border-radius:0;
+    }
+
+    footer{
+    	position: absolute;
+    	bottom: 0;
+    	width: 100%;
+    }
+
+    .form-h1{
+    	font-size:3.5em;
+    }
+    
+    .frm-edit{
+      width:90%;
+    }
+
+
+}
