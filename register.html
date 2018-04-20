@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration | AIKYA</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" type="text/css" href="https://blackrockdigital.github.io/startbootstrap-grayscale/vendor/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container frm-edit">
+    <div class="row">
+        <h1 class="form-h1">REGISTER</h1>
+        <form id="contactform" method="POST">
+            <div class="form-group">
+                <input class="form-control" id="name" type="text" name="name" placeholder="Name" required="true">
+            </div>
+            <div class="form-group">
+                <input class="form-control" id="college" type="text" name="college" placeholder="College">
+            </div>
+            <div class="form-group">
+                <input class="form-control" id="usn" type="text" name="usn" placeholder="USN" required="true">
+            </div> 
+            <div class="form-group">
+                <select class="form-control" name="events">
+                	<option class="default" selected>EVENT NAME</option>
+                    <option>PHINEAS &amp; FERB’S TECHNO-EXTRAVAGANZA</option>
+                    <option>CODE BREAKERS-CODING CONTEST</option>
+                    <option>RICK SANCHEZ’S IDEAPALOOZA</option>
+                    <option>HUNT FOR THE INFINTY STONES</option>
+                    <option>CRISIS ON INFINITE EARTHS</option>
+                    <option>MARVEL &amp; DC DEBATE STANDOFF</option>
+                    <option>COSPLAY DAY</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="payment" name="payment">
+                    <option class="default" selected>Payment mode</option>
+                    <option>Online</option>
+                    <option>Offline</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="payment-gateway" name="payment-gateway">
+                    <option>Payment wallet</option>
+                    <option>Paytm</option>
+                    <option>Tez</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit"></input>
+            </div>
+        </form>
+    </div>
+    </div>
+	
+    <footer>
+			<p>Designed &amp; Developed by <strong>AIKYA</strong></p>
+			<p>
+		      <a href="https://www.facebook.com/groups/1505135473081970/about/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+		      <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+		      <a href="#" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+		    </p>
+
+	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/register.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
