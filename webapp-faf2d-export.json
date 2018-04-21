@@ -1,202 +1,96 @@
-{
-  "cse" : {
-    "1111" : {
-      "aggregate" : "1",
-      "backlog" : "1",
-      "branch" : "CSE",
-      "email" : "1",
-      "firstname" : "sa",
-      "gender" : "MALE",
-      "lastname" : "sa",
-      "phone" : "1",
-      "user_id" : "-L2ju1Nu4v_2on2ZvTsA",
-      "usn" : "1111"
+"events":{
+    "Techno-Extravaganza": [{
+        "name":"Adithya",
+        "usn":"1rn15cs010",
+        "college":"Rnsit",
+        "order-id":"123456",
+        "payment-mode":"Online",
+        "payment-wallet":"Paytm",
+        "amount":"0"      
     },
-    "1212" : {
-      "aggregate" : "1",
-      "backlog" : "1",
-      "branch" : "CSE",
-      "email" : "ww",
-      "firstname" : "qw",
-      "gender" : "MALE",
-      "lastname" : "qw",
-      "phone" : "1",
-      "user_id" : "-L2jtwXyyR6NYjpyfKBt",
-      "usn" : "1212"
+    {
+        "name":"Aditya",
+        "usn":"1rn15cs009",
+        "college":"Rnsit",
+        "order-id":"123457",
+        "payment-mode":"offline",
+        "payment-wallet":"",
+        "amount":"0" 
+    }],
+
+    "CodingContest":[{
+        "name":"Adithya",
+        "usn":"1rn15cs010",
+        "college":"Rnsit",
+        "order-id":"123456",
+        "payment-mode":"Online",
+        "payment-wallet":"Paytm",
+        "amount":"0"      
     },
-    "1EREE" : {
-      "aggregate" : "22",
-      "backlog" : "2",
-      "branch" : "CSE",
-      "dob" : "2018-12-31",
-      "email" : "hello@gmail.com",
-      "firstname" : "SAI",
-      "gender" : "MALE",
-      "lastname" : "SAI",
-      "phone" : "112121",
-      "user_id" : "-L2zVcHWo9UF4uJObDUS",
-      "usn" : "1EREE"
-    }
-  },
-  "eee" : {
-    "1RN14CS075" : {
-      "aggregate" : "11",
-      "backlog" : "11",
-      "branch" : "EEE",
-      "dob" : "2018-12-31",
-      "email" : "r@g.oom",
-      "firstname" : "SAI",
-      "gender" : "MALE",
-      "lastname" : "SAI",
-      "phone" : "12",
-      "usn" : "1RN14CS075"
-    }
-  },
-  "eie" : {
-    "111" : {
-      "aggregate" : "2",
-      "backlog" : "2",
-      "branch" : "EIE",
-      "dob" : "2018-01-12",
-      "email" : "sai@r.com",
-      "firstname" : "sai",
-      "gender" : "FEMALE",
-      "lastname" : "sai",
-      "phone" : "1212121211",
-      "user_id" : "-L2kTb1D65jxo3DFBkpB",
-      "usn" : "111"
+    {
+        "name":"Aditya",
+        "usn":"1rn15cs009",
+        "college":"Rnsit",
+        "order-id":"123457",
+        "payment-mode":"offline",
+        "payment-wallet":"",
+        "amount":"0" 
+    }],
+
+    "Ideapalooza":[{
+        "name":"Adithya",
+        "usn":"1rn15cs010",
+        "college":"Rnsit",
+        "order-id":"123456",
+        "payment-mode":"Online",
+        "payment-wallet":"Paytm",
+        "amount":"0"      
     },
-    "1RN14CS105" : {
-      "aggregate" : "454",
-      "backlog" : "5",
-      "branch" : "EIE",
-      "dob" : "2018-12-31",
-      "email" : "spoo@gmail.com",
-      "firstname" : "sai",
-      "gender" : "FEMALE",
-      "lastname" : "sai",
-      "phone" : "454",
-      "user_id" : "-L2nYgmENEamIRwAay1Z",
-      "usn" : "1RN14CS105"
-    }
-  },
-  "ise" : {
-    "075" : {
-      "aggregate" : "2",
-      "backlog" : "2",
-      "branch" : "ISE",
-      "dob" : "2018-01-04",
-      "email" : "r@gmail.com",
-      "firstname" : "sai",
-      "gender" : "FEMALE",
-      "lastname" : "sai",
-      "phone" : "2222222222",
-      "usn" : "075"
+    {
+        "name":"Aditya",
+        "usn":"1rn15cs009",
+        "college":"Rnsit",
+        "order-id":"123457",
+        "payment-mode":"offline",
+        "payment-wallet":"",
+        "amount":"0" 
+    }],
+
+    "infinite-earths":[{
+        "name":"Adithya",
+        "usn":"1rn15cs010",
+        "college":"Rnsit",
+        "order-id":"123456",
+        "payment-mode":"Online",
+        "payment-wallet":"Paytm",
+        "amount":"0"      
     },
-    "1rn14cs075" : {
-      "aggregate" : "1",
-      "backlog" : "2",
-      "branch" : "ISE",
-      "dob" : "2017-12-31",
-      "email" : "r@v.com",
-      "firstname" : "sai",
-      "gender" : "MALE",
-      "lastname" : "sai",
-      "phone" : "4545454545",
-      "user_id" : "-L2nM6MfRyo3tXpT8Cle",
-      "usn" : "1rn14cs075"
-    }
-  },
-  "mech" : {
-    "1RN14CS098" : {
-      "aggregate" : "1",
-      "backlog" : "1",
-      "branch" : "MECH",
-      "dob" : "2017-10-31",
-      "email" : "sai@gma.com",
-      "firstname" : "SAI",
-      "gender" : "MALE",
-      "lastname" : "SAI",
-      "phone" : "1",
-      "user_id" : "-L2naBjsHTRisk4CojYj",
-      "usn" : "1RN14CS098"
+    {
+        "name":"Aditya",
+        "usn":"1rn15cs009",
+        "college":"Rnsit",
+        "order-id":"123457",
+        "payment-mode":"offline",
+        "payment-wallet":"",
+        "amount":"0" 
+    }], 
+
+    "cosplay":[{
+        "name":"Adithya",
+        "usn":"1rn15cs010",
+        "college":"Rnsit",
+        "order-id":"123456",
+        "payment-mode":"Online",
+        "payment-wallet":"Paytm",
+        "amount":"0"      
     },
-    "1rn14cs075" : {
-      "aggregate" : "45",
-      "backlog" : "45",
-      "branch" : "MECH",
-      "dob" : "2018-12-31",
-      "email" : "s@r.com",
-      "firstname" : "sai",
-      "gender" : "MALE",
-      "lastname" : "sai",
-      "phone" : "45",
-      "user_id" : "-L2nXwfeJWf5n1gZqfGf",
-      "usn" : "1rn14cs075"
-    }
-  },
-  "message" : {
-    "HELLO" : {
-      "date" : "Mon Jan 22 2018 22:02:19 GMT+0530 (India Standard Time)",
-      "message" : "master : All the different website versions are pushedh here. This is the development branch.\nmastercopy : Master copy pf rnsit website is in this branch. Note: This branch is not to be alterted.\ndeploy : This is same as that of master branch but with minified css and js. So commit here after minification.\ntriald3 : This branch is for dimple js.\nversion : This branch is a dummy branch and have to be deleted.",
-      "title" : "HELLO"
-    },
-    "HEY" : {
-      "date" : "Mon Jan 22 2018 22:03:26 GMT+0530 (India Standard Time)",
-      "message" : "Wipro is coming \nInfosis is coming ",
-      "title" : "HEY"
-    },
-    "NEW PUSH" : {
-      "date" : "Mon Jan 22 2018 22:04:53 GMT+0530 (India Standard Time)",
-      "message" : "changed text",
-      "title" : "NEW PUSH"
-    },
-    "THIS IS NEW UPDATE" : {
-      "date" : "Mon Jan 22 2018 21:57:09 GMT+0530 (India Standard Time)",
-      "message" : "HELLO",
-      "title" : "THIS IS NEW UPDATE"
-    }
-  },
-  "ticketnumber" : [ {
-    "tid" : 3
-  } ],
-  "undefined" : {
-    "aggregate" : "",
-    "backlog" : "",
-    "branch" : "Choose your option",
-    "dob" : "",
-    "email" : "",
-    "firstname" : "",
-    "gender" : "FEMALE",
-    "lastname" : "",
-    "phone" : "",
-    "user_id" : "-L8rkWIFQBjnu9ZnR3cN",
-    "usn" : ""
-  },
-  "users" : {
-    "T1" : {
-      "email" : "SAI@GMAI.COM",
-      "gender" : "FEMALE",
-      "mop" : "PAYTM",
-      "name" : "SAI",
-      "phone" : "1223234345",
-      "tid" : "T1"
-    },
-    "T2" : {
-      "email" : "VISHAL.PRINCE3@GMAIL.COM",
-      "gender" : "MALE",
-      "mop" : "PAYTM",
-      "name" : "THIS",
-      "phone" : "222",
-      "tid" : "T2"
-    },
-    "T3" : {
-      "email" : "ASD@GH.COM",
-      "gender" : "MALE",
-      "mop" : "PAYTM",
-      "name" : "QWERTY",
-      "phone" : "2343442342",
-      "tid" : "T3"
-    }
-  }
+    {
+        "name":"Aditya",
+        "usn":"1rn15cs009",
+        "college":"Rnsit",
+        "order-id":"123457",
+        "payment-mode":"offline",
+        "payment-wallet":"",
+        "amount":"0" 
+    }]
 }
