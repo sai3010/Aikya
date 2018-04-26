@@ -273,17 +273,17 @@ section:not(.intro):nth-child(even){
   
 }
 
-.past{
+.past, .spon{
   margin-bottom: 50px;
 }
 
-.past h3{
+.past, .spon h3{
   margin:50px auto 25px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.past p{
+.past, .spon p{
   width: 80%;
   text-align: center;
   text-transform: uppercase;
