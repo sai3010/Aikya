@@ -273,17 +273,17 @@ section:not(.intro):nth-child(even){
   
 }
 
-.past, .spon{
+.past{
   margin-bottom: 50px;
 }
 
-.past, .spon h3{
+.past h3{
   margin:50px auto 25px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.past, .spon p{
+.past p{
   width: 80%;
   text-align: center;
   text-transform: uppercase;
@@ -335,15 +335,17 @@ footer p a:hover{
 }
 
 footer p{
+  margin-top: 5px;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
   opacity: 0.9;
   align-self: center;
 }
-#btop
-{
-  color: white !important;
+
+#btop{
+  text-decoration: none;
+  color:#fff;
 }
 
 footer p strong{
@@ -359,7 +361,7 @@ footer p strong{
   }
   footer p{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   footer ul li{
     margin: 0 8px;
