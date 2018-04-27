@@ -195,7 +195,7 @@ footer p strong{
 		flex-direction: column;
 		position: fixed;
 		bottom: 0;
-		width: 104%;
+		width: 100%;
 	}
 	footer p{
 		text-align: center;
