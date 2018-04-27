@@ -1,12 +1,12 @@
 @fontface{
-	font-family: "Product Sans";
-	src:url("https://rawgit.com/sai3010/Aikya/master/css/psr.ttf") format("truetype");
+	font-family: "Nexa";
+	src:url("https://rawgit.com/sai3010/Aikya/master/css/Nexa%20Light.otf") format("opentype");
 }
 
 @fontface{
-	font-family: "Product Sans";
+	font-family: "Nexa";
 	font-weight: bold;
-	src:url("https://rawgit.com/sai3010/Aikya/master/css/psb.ttf") format("truetype");
+	src:url("https://rawgit.com/sai3010/Aikya/master/css/Nexa%20Bold.otf") format("opentype");
 }
 
 
@@ -23,7 +23,7 @@ html{
 body{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1510751007277-36932aac9ebd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b38707ab03efa2c9c0631400add389a&auto=format&fit=crop&w=1577&q=80');
 	color:#fff;
-	font-family: 'Product Sans' !important;
+	font-family: 'Nexa' !important;
 }
 
 a{
