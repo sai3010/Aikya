@@ -11,18 +11,18 @@
 	<div class="container frm-edit">
     <div class="row">
         <h1 class="form-h1">REGISTER</h1>
-        <form id="contactform" method="POST">
+        <form id="contactform">
             <div class="form-group">
                 <input class="form-control" id="name" type="text" name="name" placeholder="Name" required="true">
             </div>
             <div class="form-group">
-                <input class="form-control" id="college" type="text" name="college" placeholder="College">
+                <input class="form-control" id="college" type="text" name="college" placeholder="College" required="true">
             </div>
             <div class="form-group">
                 <input class="form-control" id="usn" type="text" name="usn" placeholder="USN" required="true">
             </div> 
             <div class="form-group">
-                <select class="form-control" name="events">
+                <select class="form-control" id="events" name="events">
                 	<option class="default" selected>EVENT NAME</option>
                     <option>PHINEAS &amp; FERB’S TECHNO-EXTRAVAGANZA</option>
                     <option>CODE BREAKERS-CODING CONTEST</option>
@@ -48,7 +48,10 @@
                 </select>
             </div>
             <div class="form-group">
-                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Submit"></input>
+                <input class="form-control" id="oid" type="text" name="orderid" placeholder="Order ID" required="true">
+            </div> 
+            <div class="form-group">
+                <input class="btn btn-lg btn-primary btn-block" onclick="store()" type="button" value="Submit"></input>
             </div>
         </form>
     </div>
@@ -64,10 +67,10 @@
 
 	</footer>
 
-	<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="js/register.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</html>
+    <script src="js/register.js"></script>
+    </html>
