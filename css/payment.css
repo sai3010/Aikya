@@ -1,12 +1,12 @@
 @fontface{
 	font-family: "Product Sans";
-	src:url("psr.ttf") format("truetype");
+	src:url("https://rawgit.com/sai3010/Aikya/master/css/psr.ttf") format("truetype");
 }
 
 @fontface{
 	font-family: "Product Sans";
 	font-weight: bold;
-	src:url("psb.ttf") format("truetype");
+	src:url("https://rawgit.com/sai3010/Aikya/master/css/psb.ttf") format("truetype");
 }
 
 
@@ -16,6 +16,7 @@
 
 html{
 	height: 100%;
+	width:100%;
 }
 
 body{
