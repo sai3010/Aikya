@@ -119,6 +119,14 @@ body{
   max-width: 100% !important; 
 }
 
+:root [hidden]{
+  display: block !important;
+}
+
+[hidden] {
+    display: block !important;
+}
+
 
 @media only screen and (max-width: 500px){
   .rns-logo{
@@ -313,9 +321,7 @@ section:not(.intro):nth-child(even){
   flex-basis: 70%;
 }
 
-.sponsors{
 
-}
 
 .sponsors h3{
   margin: 50px auto;
