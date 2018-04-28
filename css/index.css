@@ -379,7 +379,7 @@ footer p strong{
   letter-spacing: 1px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 375px){
   .past .grid li.small,.past .grid li.large{
     flex-basis: 100%;
   }
@@ -398,5 +398,34 @@ footer p strong{
   }
   .team img{
     height: 250px;
+  }
+  .sponsor-logo{
+    width: 150px;
+  }
+}
+
+@media (min-width: 376px) and (max-height: 768px){
+  .past .grid li.small,.past .grid li.large{
+    flex-basis: 100%;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+  footer p{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  footer ul li{
+    margin: 0 8px;
+  }
+  .team{
+    width: 90% !important;
+  }
+  .team img{
+    height: 250px;
+  }
+  .sponsor-logo{
+    width: 180px;
   }
 }
