@@ -269,7 +269,7 @@ section:not(.intro):nth-child(even){
 .team img{
   margin: 0 auto;
   height: 500px;
-  object-fit: contain;
+  object-fit: cover;
   
 }
 
@@ -311,6 +311,33 @@ section:not(.intro):nth-child(even){
 }
 .past .grid li.large{
   flex-basis: 70%;
+}
+
+.sponsors{
+
+}
+
+.sponsors h3{
+  margin: 50px auto;
+  font-weight: bold;
+}
+
+.sponsors .container-fluid{
+  margin: 0 auto !important;
+}
+
+.row{
+  margin: 0 !important;
+}
+
+.col-6{
+  padding: 0 !important;
+}
+
+.sponsor-logo{
+  width: 180px;
+  height: 120px;
+  margin-bottom: 50px;
 }
 
 footer{
