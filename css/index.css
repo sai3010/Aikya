@@ -116,7 +116,7 @@ body{
 }
 
 .container{
-  max-width: 100% !important; 
+ /* max-width: 100% !important;*/ 
 }
 
 
@@ -315,12 +315,12 @@ section:not(.intro):nth-child(even){
 
 
 
-.sponsors h3{
+.s h3{
   margin: 50px auto;
   font-weight: bold;
 }
 
-.sponsors .container-fluid{
+.s .container{
   margin: 0 auto !important;
 }
 
@@ -332,7 +332,7 @@ section:not(.intro):nth-child(even){
   padding: 0 !important;
 }
 
-.sponsor-logo{
+.s-l{
   width: 180px;
   height: 120px;
   margin-bottom: 50px;
@@ -397,7 +397,7 @@ footer p strong{
   .team img{
     height: 250px;
   }
-  .sponsor-logo{
+  .s-l{
     width: 150px;
   }
 }
@@ -423,7 +423,7 @@ footer p strong{
   .team img{
     height: 250px;
   }
-  .sponsor-logo{
+  .s-l{
     width: 180px;
   }
 }
