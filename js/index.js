@@ -10,3 +10,7 @@ function typeWriter () {
   }
 }
 typeWriter()
+function soon()
+{
+    alert("Coming Soon")
+}
