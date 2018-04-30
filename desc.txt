@@ -1,46 +1,136 @@
-AIKYA, an annually conducted CSE departmental fest, is going into its seventh year after being a grand success at its inception. The fest is a coalition of technical, gaming, sports and cultural events, aimed at challenging the intellect of students among various colleges in Bangalore. The highlight of the fest is the state level inter collegiate Project Open-House Panorama(nicknamed Phineas And Ferb’s Techno-Extravaganza for the theme), which provides a stage for students to showcase their new ideas through projects and get recognized by the industry.The event aims to promote the spirit of innovation and creativity among the students, and to encourage students to work on projects that make a difference.  
+$('#payment-gateway').prop('disabled', true)
+$('select').change(function () {
+  if ($('#payment').val() === 'Online') {
+    $('#payment-gateway').prop('disabled', false)
+  } else {
+    if ($('#payment').index() === 0 || $('#payment').val() === 'Offline')
+      $('#payment-gateway').prop('disabled', true)
+  }
+})
 
-Event Details
-Phineas And Ferb’s Techno-Extravaganza:
-Presentation of innovative projects by the students during this academic year. These projects include the final year projects by students from various departments within our college and from other colleges as well.
-Venue : Edusat Hall
-Timings : 9:45 am - 12 pm
-Registration Fee : Rs 50
+// Initialize Firebase 
+var bucket = {
+  apiKey: "AIzaSyCbBbveKyGod8a8rq0WSYXbLH-eoGPLLjA",
+  authDomain: "aikya-18.firebaseapp.com",
+  databaseURL: "https://aikya-18.firebaseio.com",
+  projectId: "aikya-18",
+  storageBucket: "aikya-18.appspot.com",
+  messagingSenderId: "333547296250"
+};
+firebase.initializeApp(bucket);
+// Firebase start
+var databaseRef = firebase.database().ref('Aikya18/')
+var db = '/Aikya18/'
+var name, college, usn, events, pay, paygate, oid
 
-Code Breakers - Coding Contest:
-This coding contest challenges our students with scenarios faced by present day professionals includes coding and decoding problems.
-Venue : Room No 208
-Timings : 9:45 am - 12 pm
-Registration Fee: Free
+function store () {
+  name = $('#name').val()
+  college = $('#college').val()
+  usn = $('#usn').val()
+  e = document.getElementById('events')
+  events = e.options[e.selectedIndex].text
+  d = document.getElementById('payment')
+  pay = d.options[d.selectedIndex].text
+  pg = document.getElementById('payment-gateway')
+  paygate = pg.options[pg.selectedIndex].text
+  oid = $('#oid').val()
 
-Rick Sanchez’s Ideapalooza:
-Innovations is key in our present day world and Rick Sanchez stands for the craziest and most innovative ideas to solve our problems.
-Present your crazy idea that can shake the Tech industry and win a chance to make it your dream project
-Venue : Seminar Hall
-Timings : 1:30 pm - 4:30 pm
-Registration Fee: Free
+  // alert(events)
+  switch (events) {
+    // case 'JUNKYARD WARS':
+    //   var databaseRef = firebase.database().ref('JUNKYARD WARS/')
+    //   var db = '/JUNKYARD WARS/'
+    //   break
+    case 'CODE BREAKERS-CODING CONTEST':
+      var databaseRef = firebase.database().ref('CODING CONTEST/')
+      var db = '/CODING CONTEST/'
+      break
+    // case 'RICK SANCHEZ IDEATHON-PALOOZA':
+    //   var databaseRef = firebase.database().ref('IDEATHON-PALOOZA/')
+    //   var db = '/IDEATHON-PALOOZA/'
+    //   break
+    case 'HUNT FOR THE INFINTY STONES':
+      var databaseRef = firebase.database().ref('INFINTY STONES/')
+      var db = '/INFINTY STONES/'
+      break
+    case 'CRISIS ON INFINITE EARTHS':
+      var databaseRef = firebase.database().ref('INFINITE EARTHS/')
+      var db = '/INFINITE EARTHS/'
+      break
+    case 'MARVEL & DC SHOWDOWN (DEBATE)':
+      var databaseRef = firebase.database().ref('DEBATE STANDOFF/')
+      var db = '/DEBATE STANDOFF/'
+      break
+    case 'ANIMESIA':
+      var databaseRef = firebase.database().ref('ANIMESIA/')
+      var db = '/ANIMESIA/'
+      break
+    case 'FIFA-18':
+      var databaseRef = firebase.database().ref('FIFA-18/')
+      var db = '/FIFA-18/'
+      break
+  }
+  checkIfUserExists(usn, db)
+}
 
-Hunt for the Infinity Stones:
-A completely themed event dedicated to the upcoming movie Avengers: Infinity Wars. A treasure hunt to assemble the infinity stones and defeat Thanos.
-Venue : Room No 201 & 311
-Timings : 9:45 am - 1 pm
-Registration Fee: Rs 30
+function reload_page () {
+  window.location.reload()
+}
 
-Crisis on Infinite Earths :
-A homage to one of the most significant story-lines in the DC multiverse. A QR hunt to assemble the Justice League and protect our Earth.
-Venue : Room No 202
-Timings :  9:45 am - 1 pm
-Registration Fee: Rs 30
-
-Marvel vs DC - Debate Standoff:
-Are you a true DC or Marvel fan? How about you take up this debate to settle things once and for all. Who can come out on top?
-Venue : Room No 203-204
-Timings : 1:30 pm - 5 pm
-Registration Fee: Rs 30
-
-Cosplay Day:
-How crazy are you about becoming your favorite comic character?
-Represent a character or element from the pop culture realm.
-Venue : None
-Timings : Full Day
-Registration Fee: Free
+function checkIfUserExists (usn, db) {
+  var databaseRef = firebase.database().ref(db)
+  databaseRef.child(usn).once('value', function (snapshot) {
+    var exists = (snapshot.val() !== null)
+    if (exists) {
+      alert('user ' + usn + ' exists!'+'Please contact coordinators')
+    } else {
+      var data = {
+        name: name.toUpperCase(),
+        usn: usn.toUpperCase(),
+        college: college.toUpperCase(),
+        mop: pay,
+        pgateway: paygate,
+        oid: oid
+      }
+      var updates = {}
+      updates[db + usn] = data; // + usn makes it a primary key.
+      firebase.database().ref().update(updates)
+      alert('You have sucessfully registered for the event!')
+      reload_page()
+    }
+  })
+}
+// Firebase end
+var user;
+function signin()
+{
+  var provider = new firebase.auth.GoogleAuthProvider();
+  if(user){
+    app(user);
+  }
+  else{
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+// This gives you a Google Access Token. You can use it to access the Google API.
+var token = result.credential.accessToken;
+// The signed-in user info.
+user = result.user;
+alert(user.email)
+console.log(user.displayName);
+window.location.href="register.html";
+// ...
+}).catch(function(error) {
+// Handle Errors here.
+var errorCode = error.code;
+var errorMessage = error.message;
+// The email of the user's account used.
+var email = error.email;
+// The firebase.auth.AuthCredential type that was used.
+var credential = error.credential;
+// ...
+});
+}
+}
+function soon()
+{
+    alert("Coming Soon")
+}
