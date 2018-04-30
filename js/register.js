@@ -37,18 +37,18 @@ function store () {
 
   // alert(events)
   switch (events) {
-    case 'JUNKYARD WARS':
-      var databaseRef = firebase.database().ref('JUNKYARD WARS/')
-      var db = '/JUNKYARD WARS/'
-      break
+    // case 'JUNKYARD WARS':
+    //   var databaseRef = firebase.database().ref('JUNKYARD WARS/')
+    //   var db = '/JUNKYARD WARS/'
+    //   break
     case 'CODE BREAKERS-CODING CONTEST':
       var databaseRef = firebase.database().ref('CODING CONTEST/')
       var db = '/CODING CONTEST/'
       break
-    case 'RICK SANCHEZ IDEATHON-PALOOZA':
-      var databaseRef = firebase.database().ref('IDEATHON-PALOOZA/')
-      var db = '/IDEATHON-PALOOZA/'
-      break
+    // case 'RICK SANCHEZ IDEATHON-PALOOZA':
+    //   var databaseRef = firebase.database().ref('IDEATHON-PALOOZA/')
+    //   var db = '/IDEATHON-PALOOZA/'
+    //   break
     case 'HUNT FOR THE INFINTY STONES':
       var databaseRef = firebase.database().ref('INFINTY STONES/')
       var db = '/INFINTY STONES/'
