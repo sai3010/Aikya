@@ -9,15 +9,15 @@ $('select').change(function () {
 })
 
 // Initialize Firebase 
-var config = {
-  apiKey: 'AIzaSyCD64P6ynVrCLAtDHcKHNnB04zAs93A0z0',
-  authDomain: 'aikyaweb-fe148.firebaseapp.com',
-  databaseURL: 'https://aikyaweb-fe148.firebaseio.com',
-  projectId: 'aikyaweb-fe148',
-  storageBucket: 'aikyaweb-fe148.appspot.com',
-  messagingSenderId: '628936850494'
-}
-firebase.initializeApp(config)
+var bucket = {
+  apiKey: "AIzaSyCbBbveKyGod8a8rq0WSYXbLH-eoGPLLjA",
+  authDomain: "aikya-18.firebaseapp.com",
+  databaseURL: "https://aikya-18.firebaseio.com",
+  projectId: "aikya-18",
+  storageBucket: "aikya-18.appspot.com",
+  messagingSenderId: "333547296250"
+};
+firebase.initializeApp(bucket);
 // Firebase start
 var databaseRef = firebase.database().ref('Aikya18/')
 var db = '/Aikya18/'
@@ -101,6 +101,34 @@ function checkIfUserExists (usn, db) {
   })
 }
 // Firebase end
+var user;
+function signin()
+{
+  var provider = new firebase.auth.GoogleAuthProvider();
+  if(user){
+    app(user);
+  }
+  else{
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+// This gives you a Google Access Token. You can use it to access the Google API.
+var token = result.credential.accessToken;
+// The signed-in user info.
+user = result.user;
+console.log(user.displayName);
+window.location.href="register.html";
+// ...
+}).catch(function(error) {
+// Handle Errors here.
+var errorCode = error.code;
+var errorMessage = error.message;
+// The email of the user's account used.
+var email = error.email;
+// The firebase.auth.AuthCredential type that was used.
+var credential = error.credential;
+// ...
+});
+}
+}
 function soon()
 {
     alert("Coming Soon")
