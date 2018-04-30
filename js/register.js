@@ -36,17 +36,17 @@ function store () {
   oid = $('#oid').val()
 
   switch (events) {
-    case 'PHINEAS & FERB’S TECHNO-EXTRAVAGANZA':
-      var databaseRef = firebase.database().ref('TECHNO-EXTRAVAGANZA/')
-      var db = '/TECHNO-EXTRAVAGANZA/'
+    case 'JUNKYARD WARS':
+      var databaseRef = firebase.database().ref('JUNKYARD WARS/')
+      var db = '/JUNKYARD WARS/'
       break
     case 'CODE BREAKERS-CODING CONTEST':
       var databaseRef = firebase.database().ref('CODING CONTEST/')
       var db = '/CODING CONTEST/'
       break
-    case 'RICK SANCHEZ’S IDEAPALOOZA':
-      var databaseRef = firebase.database().ref('IDEAPALOOZA/')
-      var db = '/IDEAPALOOZA/'
+    case 'RICK SANCHEZ IDEATHON-PALOOZA':
+      var databaseRef = firebase.database().ref('IDEATHON-PALOOZA/')
+      var db = '/IDEATHON-PALOOZA/'
       break
     case 'HUNT FOR THE INFINTY STONES':
       var databaseRef = firebase.database().ref('INFINTY STONES/')
@@ -56,13 +56,13 @@ function store () {
       var databaseRef = firebase.database().ref('INFINITE EARTHS/')
       var db = '/INFINITE EARTHS/'
       break
-    case 'MARVEL &amp; DC DEBATE STANDOFF':
+    case 'MARVEL & DC SHOWDOWN (DEBATE)':
       var databaseRef = firebase.database().ref('DEBATE STANDOFF/')
       var db = '/DEBATE STANDOFF/'
       break
-    case 'COSPLAY DAY':
-      var databaseRef = firebase.database().ref('COSPLAY DAY/')
-      var db = '/COSPLAY DAY/'
+    case 'ANIMESIA':
+      var databaseRef = firebase.database().ref('ANIMESIA/')
+      var db = '/ANIMESIA/'
       break
   }
   checkIfUserExists(usn, db)
@@ -77,7 +77,7 @@ function checkIfUserExists (usn, db) {
   databaseRef.child(usn).once('value', function (snapshot) {
     var exists = (snapshot.val() !== null)
     if (exists) {
-      alert('user ' + usn + ' exists!')
+      alert('user ' + usn + ' exists!'+'Please contact coordinators')
     } else {
       var data = {
         name: name.toUpperCase(),
@@ -90,9 +90,13 @@ function checkIfUserExists (usn, db) {
       var updates = {}
       updates[db + usn] = data; // + usn makes it a primary key.
       firebase.database().ref().update(updates)
-      alert('success')
+      alert('You have sucessfully registered for the event!')
       reload_page()
     }
   })
 }
 // Firebase end
+function soon()
+{
+    alert("Coming Soon")
+}

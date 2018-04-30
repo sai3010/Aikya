@@ -152,3 +152,14 @@ footer p strong{
 
 
 }
+.fab
+{
+    text-align: center;
+    margin: auto;
+    color: white !important;
+}
+a:focus, a:hover
+{
+    color: none;
+    text-decoration: none;
+}
