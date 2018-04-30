@@ -35,6 +35,7 @@ function store () {
   paygate = pg.options[pg.selectedIndex].text
   oid = $('#oid').val()
 
+  // alert(events)
   switch (events) {
     case 'JUNKYARD WARS':
       var databaseRef = firebase.database().ref('JUNKYARD WARS/')
@@ -63,6 +64,10 @@ function store () {
     case 'ANIMESIA':
       var databaseRef = firebase.database().ref('ANIMESIA/')
       var db = '/ANIMESIA/'
+      break
+    case 'FIFA-18':
+      var databaseRef = firebase.database().ref('FIFA-18/')
+      var db = '/FIFA-18/'
       break
   }
   checkIfUserExists(usn, db)

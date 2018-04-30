@@ -18,4 +18,7 @@ $("#demo01").animatedModal({
     });
     $("#demo07").animatedModal({
                 modalTarget:'animatedModal7'
-});
+    });
+    $("#demo08").animatedModal({
+    modalTarget:'animatedModal8'
+    });
