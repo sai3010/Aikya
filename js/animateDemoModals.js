@@ -20,5 +20,5 @@ $("#demo01").animatedModal({
                 modalTarget:'animatedModal7'
     });
     $("#demo08").animatedModal({
-    modalTarget:'animatedModal8'
+                 modalTarget:'animatedModal8'
     });
